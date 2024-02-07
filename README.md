@@ -1,3 +1,5 @@
+**Este curso será desativado em  **30/04/2024**.  Depois que o curso for desativado, todos os repositórios do GitHub serão removidos. Obrigado.**
+
 # DP-500: Como criar e implementar soluções de análise de escala corporativa usando o Microsoft Azure
 
 - **Você é um MCT?** Dê uma olhada no nosso [Guia de usuário do GitHub para MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
