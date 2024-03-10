@@ -235,7 +235,7 @@ Nesta tarefa, você abrirá o BPA e revisará os resultados das verificações.
     *Dica: é possível copiar e colar todas as fórmulas de **D:\DP500\Allfiles\13\Assets\Snippets.txt**.*
 
     ```
-    DIVIDE ( [Profit], SUM ( 'Sales'[Sales Amount] ) )C#
+    DIVIDE ( [Profit], SUM ( 'Sales'[Sales Amount] ) )
     ```
 
 7. Para salvar as alterações do modelo, na barra de ferramentas, selecione o comando **Salvar alterações no banco de dados conectado** (ou pressione **Ctrl+S**).
@@ -280,7 +280,7 @@ Nesta tarefa, você abrirá o BPA e revisará os resultados das verificações.
 
 17. Para fechar o Editor de Tabela, no menu, selecione **Arquivo** > **Sair**.
 
-18. Salve o arquivo do Power BI Desktop.
+18. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-use-tools-to-optimize-power-bi-performance-image29.png)
 
