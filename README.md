@@ -1,4 +1,4 @@
-**Este curso será desativado em  **30/04/2024**.  Depois que o curso for desativado, todos os repositórios do GitHub serão removidos. Obrigado.**
+**Este curso será desativado em  **30/04/2024**. Não estamos mais monitorando esse repositório para problemas e solicitações de pull. Quando o curso for desativado, todos os repositórios do GitHub serão removidos. Você pode encontrar conteúdo relacionado no repositório do [Microsoft Fabric](https://github.com/MicrosoftLearning/mslearn-fabric).**
 
 # DP-500: Como criar e implementar soluções de análise de escala corporativa usando o Microsoft Azure
 
