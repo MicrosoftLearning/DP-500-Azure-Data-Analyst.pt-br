@@ -4,9 +4,9 @@ lab:
   module: Setup your own environment
 ---
 
-# Configuração do ambiente de laboratório local
+# Configuração do ambiente de laboratório local 
 
-Idealmente, você deve concluir esses laboratórios em um ambiente de laboratório hospedado. Se você quiser concluí-los em seu próprio computador, isso poderá ser feito instalando o seguinte software. Você pode passar por diálogos e comportamento inesperados ao usar seu próprio ambiente. Devido à ampla gama de configurações locais possíveis, a equipe do curso não pode oferecer suporte a problemas que você possa encontrar em seu próprio ambiente.
+Idealmente, você deve concluir esses laboratórios em um ambiente de laboratório hospedado. Se você quiser concluí-los em seu próprio computador, isso poderá ser feito instalando o seguinte software. Você pode enfrentar diálogos e comportamento inesperados ao usar seu próprio ambiente. Devido à ampla gama de configurações locais possíveis, a equipe do curso não pode oferecer suporte a problemas que você possa encontrar em seu próprio ambiente.
 
 Detalhes de instalação e arquivos de backup de banco de dados podem ser encontrados no [GitHub](https://github.com/MicrosoftLearning/DP-500-Azure-Data-Analyst/tree/main/Allfiles/00-Setup).
 
