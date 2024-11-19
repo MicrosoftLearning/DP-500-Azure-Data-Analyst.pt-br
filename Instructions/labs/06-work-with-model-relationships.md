@@ -10,13 +10,13 @@ lab:
 
 **O tempo estimado para concluir o laboratório é de 45 minutos**
 
-Neste laboratório, você trabalhará com relações de modelo, especificamente para abordar a necessidade de dimensões de interpretação de papéis. Isso envolverá trabalhar com relações ativas e inativas, e também funções DAX (Data Analysis Expressions) que modificam o comportamento da relação.
+Neste laboratório, você trabalhará com relações de modelo, especificamente para abordar a necessidade de dimensões de interpretação de papéis. Isso envolverá trabalhar com relacionamentos ativos e inativos, e também funções DAX (Data Analysis Expressions) que modificam o comportamento do relacionamento.
 
 Neste laboratório, você aprenderá a:
 
-- Interpretar propriedades de relação no diagrama de modelo.
+- Interpretar propriedades de relacionamento no diagrama de modelo.
 
-- Definir propriedades de relação
+- Definir propriedades de relação.
 
 - Usar funções DAX que modificam o comportamento da relação
 
@@ -441,7 +441,7 @@ Nesta tarefa, você criará uma medida para mostrar o valor das vendas não envi
 
 Nesta tarefa, você vai concluir.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-work-with-model-relationships-image51.png)
 

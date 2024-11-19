@@ -225,7 +225,7 @@ Nesta tarefa, você validará funções estáticas.
 
 Nesta tarefa, você publicará o relatório.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-enforce-model-security-image27.png)
  
@@ -517,7 +517,7 @@ Nesta tarefa, você finalizará o design publicando o relatório e mapeando um g
 
 *As etapas desta tarefa são deliberadamente breves. Para obter detalhes completos das etapas, consulte as etapas da tarefa do exercício anterior.*
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-enforce-model-security-image75.png)
 

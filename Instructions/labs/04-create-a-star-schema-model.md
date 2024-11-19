@@ -14,7 +14,7 @@ Neste laboratório, você usará o Power BI Desktop para desenvolver um modelo d
 
 Neste laboratório, você aprenderá a:
 
-- Criar uma conexão do Power BI ao SQL do Azure Synapse Analytics.
+- Criar uma conexão do Power BI para um pool de SQL do Azure Synapse Analytics.
 
 - Desenvolver consultas de modelo.
 
@@ -28,12 +28,12 @@ Neste exercício, prepare seu ambiente.
 
    > **Observação**: se você já tiver carregado dados no Azure Synapse Analytics usando um clone do git, ignore essa tarefa e prossiga para Configurar o **Power BI.**
 
-1. Entre no portal do [Azure](https://portal.azure.com) usando as informações de logon localizadas na guia Recursos no lado direito da VM.
-2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** criando um armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
+1. Entre no [portal do Azure](https://portal.azure.com) com suas credenciais organizacionais (ou aquelas fornecidas a você).
+2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** e criando armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
 
     ![Portal do Azure com um painel do Cloud Shell](../images/cloud-shell.png)
 
-    > **Observação**: se você tiver criado anteriormente um shell de nuvem que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do shell de nuvem para alterá-lo para ***PowerShell***.
+    > **Observação**: se você tiver criado anteriormente um cloud shell que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do cloud shell para alterá-lo para ***PowerShell***.
 
 3. Observe que você pode redimensionar o Cloud Shell arrastando a barra do separador na parte superior do painel ou usando os ícones **&#8212;** , **&#9723;** e **X** no canto superior direito do painel para minimizar, maximizar e fechar o painel. Para obter mais informações de como usar o Azure Cloud Shell, confira a [documentação do Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
 
@@ -85,7 +85,7 @@ Nesta tarefa, você configurará o Power BI Desktop.
 
 2. Feche a janela de introdução selecionando o **X** localizado no canto superior direito.
 
-3. No canto superior direito do Power BI Desktop, se ainda não tiver iniciado sessão, selecione **Iniciar sessão**. Use as credenciais do laboratório para concluir o processo de entrada.
+3. No canto superior direito do Power BI Desktop, se ainda não tiver iniciado sessão, selecione **Entrar**. Use suas credenciais organizacionais (ou as credenciais do laboratório fornecidas a você) para concluir o processo de entrada.
 
 4. Você será redirecionado para a página de inscrição do Power BI no Microsoft Edge. Selecione **Continuar** para concluir a inscrição.
 
@@ -401,9 +401,9 @@ Nesta tarefa, você criará cinco consultas do Power Query que serão carregadas
 
 - **EnglishProductName** como **Produto**
 
-- **Product Details.EnglishProductCategoryName** como **Subcategoria**
+- **Product Details.EnglishProductCategoryName** como **Categoria**
 
-- **Detalhes do produto.** como **Categoria**
+- **Product Details.EnglishProductSubcategoryName** como **Subcategoria**
 
 45. Remova todas as colunas, exceto:
 

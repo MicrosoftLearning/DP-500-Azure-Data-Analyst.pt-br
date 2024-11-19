@@ -31,7 +31,7 @@ Neste exercício, você preparará seu ambiente.
 
     ![Portal do Azure com um painel do Cloud Shell](../images/cloud-shell.png)
 
-    > **Observação**: se você tiver criado anteriormente um shell de nuvem que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do shell de nuvem para alterá-lo para ***PowerShell***.
+    > **Observação**: se você tiver criado anteriormente um cloud shell que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do cloud shell para alterá-lo para ***PowerShell***.
 
 3. Observe que você pode redimensionar o Cloud Shell arrastando a barra do separador na parte superior do painel ou usando os ícones **&#8212;** , **&#9723;** e **X** no canto superior direito do painel para minimizar, maximizar e fechar o painel. Para obter mais informações de como usar o Azure Cloud Shell, confira a [documentação do Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
 
@@ -510,7 +510,7 @@ Nesta tarefa, você testará o modelo criando um layout de relatório simples.
 
     *O principal benefício do uso de colunas de deslocamento de data é que os relatórios podem filtrar por datas relativas de forma personalizada. (Segmentações de dados e filtros e também filtrar por períodos relativos de data e hora, mas esse comportamento não pode ser personalizado. Elas também não permitem a filtragem por trimestres.)*
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 1. Feche o Power BI Desktop.
 

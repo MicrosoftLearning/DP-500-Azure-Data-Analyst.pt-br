@@ -14,9 +14,9 @@ Neste laboratório, você criará um conjunto de dados especializado do Power BI
 
 Neste laboratório, você aprenderá a:
 
-- Criar uma conexão dinâmica.
+- Crie uma conexão dinâmica.
 
-- Criar um modelo DirectQuery local.
+- Crie um modelo DirectQuery local.
 
 - Usar o modo de exibição de linhagem para descobrir ativos dependentes do Power BI.
 
@@ -196,7 +196,7 @@ Nesta tarefa, você criará um novo relatório que usa uma conexão dinâmica co
 
     *Essas propriedades indicam que um modelo remoto hospeda a tabela. Na próxima tarefa, você fará alterações no modelo para estendê-lo. Esse processo criará um modelo DirectQuery local que você poderá modificar de diferentes maneiras.*
 
-16. Salve o arquivo do Power BI Desktop.
+16. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-create-reusable-power-bi-artifacts-image24.png)
 
@@ -402,7 +402,7 @@ Nesta tarefa, você adicionará uma medida para calcular as vendas per capita.
 
 Nesta tarefa, você publicará a solução, que compreende um modelo de dados especializados e um relatório.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-create-reusable-power-bi-artifacts-image57.png)
 

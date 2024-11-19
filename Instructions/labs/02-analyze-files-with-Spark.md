@@ -16,27 +16,27 @@ Este laboratório levará aproximadamente **45** minutos para ser concluído.
 
 ## Provisionar um workspace do Azure Synapse Analytics
 
-Você precisará de um workspace do Azure Synapse Analytics com acesso ao armazenamento do data lake e um pool do Apache Spark que você pode usar para consultar e processar arquivos no data lake.
+Você precisará de um workspace do Azure Synapse Analytics com acesso ao armazenamento do Data Lake e um pool do Apache Spark que possa usar para consultar e processar arquivos no Data Lake.
 
 Neste exercício, você usará uma combinação de um script do PowerShell e um modelo ARM para provisionar um workspace do Azure Synapse Analytics.
 
 1. Entre no [portal do Azure](https://portal.azure.com) em `https://portal.azure.com`.
-2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** criando um armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
+2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** e criando armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
 
     ![Portal do Azure com um painel do Cloud Shell](../images/cloud-shell.png)
 
-    > **Observação**: se você tiver criado anteriormente um shell de nuvem que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do shell de nuvem para alterá-lo para ***PowerShell***.
+    > **Observação**: se você tiver criado anteriormente um cloud shell que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do cloud shell para alterá-lo para ***PowerShell***.
 
 3. Observe que você pode redimensionar o Cloud Shell arrastando a barra do separador na parte superior do painel ou usando os ícones **&#8212;** , **&#9723;** e **X** no canto superior direito do painel para minimizar, maximizar e fechar o painel. Para obter mais informações de como usar o Azure Cloud Shell, confira a [documentação do Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
 
-4. No painel do PowerShell, insira o seguinte comando para clonar este repositório:
+4. No painel do PowerShell, insira os seguintes comandos para clonar esse repositório:
 
     ```
     rm -r dp500 -f
     git clone https://github.com/MicrosoftLearning/DP-500-Azure-Data-Analyst dp500
     ```
 
-5. Depois que o repositório tiver sido clonado, digite os seguintes comandos para alterar a pasta para a neste laboratório e executar o **setup.ps1** contido nela:
+5. Depois que o repositório tiver sido clonado, digite os seguintes comandos para alterar para a pasta deste laboratório e execute o script **setup.ps1** que ele contém:
 
     ```
     cd dp500/Allfiles/02
@@ -46,13 +46,13 @@ Neste exercício, você usará uma combinação de um script do PowerShell e um 
 6. Se solicitado, escolha qual assinatura você deseja usar (isso só acontecerá se você tiver acesso a várias assinaturas do Azure).
 7. Quando solicitado, insira uma senha adequada a ser definida para seu pool de SQL do Azure Synapse.
 
-    > **Observação**: memorize a senha!
+    > **Observação**: Memorize a senha.
 
 8. Aguarde a conclusão do script – isso normalmente leva cerca de 10 minutos, mas em alguns casos pode demorar mais. Enquanto espera, revise o artigo [Apache Spark no Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-overview) na documentação do Azure Synapse Analytics.
 
 ## Consultar dados em arquivos
 
-O script provisiona um workspace do Azure Synapse Analytics e uma conta de Armazenamento do Azure para hospedar o data lake e, em seguida, carrega alguns arquivos de dados no data lake.
+O script provisiona um espaço de trabalho do Azure Synapse Analytics e uma conta de Armazenamento do Azure para hospedar o data lake e, em seguida, carrega alguns arquivos de dados no data lake.
 
 ### Exibir arquivos no data lake
 
@@ -69,9 +69,9 @@ O script provisiona um workspace do Azure Synapse Analytics e uma conta de Armaz
 ### Use o Spark para explorar dados
 
 1. Selecione qualquer um dos arquivos na pasta **pedidos** e, na lista **Novo bloco de anotações** na barra de ferramentas, selecione **Carregar para DataFrame**. Um dataframe é uma estrutura no Spark que representa um conjunto de dados tabular.
-2. Na nova guia **Bloco de Anotações 1** que é aberta, na lista **Anexar a**, selecione seu pool do Spark (**spark*xxxxxxx***). Em seguida, use o botão **&#9655; Executar todas** para executar todas as células do bloco de anotações (atualmente há apenas uma!).
+2. Na nova guia **Bloco de Anotações 1** que é aberta, na lista **Anexar a**, selecione seu pool do Spark (**spark*xxxxxxx***). Em seguida, use o botão **▷ Executar tudo** para executar todas as células do notebook (atualmente há apenas uma!).
 
-    Como esta é a primeira vez que você executa qualquer código Spark nesta sessão, o Pool do Spark precisa ser iniciado. Isso significa que a primeira execução na sessão pode levar alguns minutos. As execuções seguintes serão mais rápidas.
+    Como esta é a primeira vez que você executa qualquer código Spark nesta sessão, o pool do Spark precisa ser iniciado. Isso significa que a primeira execução na sessão pode levar alguns minutos. As execuções seguintes serão mais rápidas.
 
 3. Enquanto aguarda a inicialização da sessão do Spark, revise o código gerado; que se parece com isto:
 
