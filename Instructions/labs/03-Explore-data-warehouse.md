@@ -16,27 +16,27 @@ Este laboratório levará aproximadamente **45** minutos para ser concluído.
 
 ## Provisionar um workspace do Azure Synapse Analytics
 
-Um *workspace* do Azure Synapse Analytics fornece um ponto central para gerenciamento de dados e tempos de execução de processamento de dados. Você pode provisionar um workspace usando a interface interativa no portal do Azure ou pode implantar um workspace e recursos nele usando um script ou modelo. Na maioria dos cenários de produção, é melhor automatizar o provisionamento com scripts e modelos para que você possa incorporar a implantação de recursos em um processo repetível de desenvolvimento e operações (*DevOps*).
+Um *workspace* do Azure Synapse Analytics fornece um ponto central para gerenciar dados e tempos de execução de processamento de dados. Você pode provisionar um workspace usando a interface interativa no portal do Azure ou pode implantar um workspace e recursos nele usando um script ou modelo. Na maioria dos cenários de produção, é melhor automatizar o provisionamento com scripts e modelos para que você possa incorporar a implantação de recursos em um processo de desenvolvimento e operações (*DevOps*) repetível.
 
 Neste exercício, você usará uma combinação de um script do PowerShell e um modelo ARM para provisionar o Azure Synapse Analytics.
 
 1. Entre no [portal do Azure](https://portal.azure.com) em `https://portal.azure.com`.
-2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** criando um armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
+2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** e criando armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
 
     ![Portal do Azure com um painel do Cloud Shell](../images/cloud-shell.png)
 
-    > **Observação**: se você tiver criado anteriormente um shell de nuvem que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do shell de nuvem para alterá-lo para ***PowerShell***.
+    > **Observação**: se você tiver criado anteriormente um cloud shell que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do cloud shell para alterá-lo para ***PowerShell***.
 
 3. Observe que você pode redimensionar o Cloud Shell arrastando a barra do separador na parte superior do painel ou usando os ícones **&#8212;** , **&#9723;** e **X** no canto superior direito do painel para minimizar, maximizar e fechar o painel. Para obter mais informações de como usar o Azure Cloud Shell, confira a [documentação do Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
 
-4. No painel do PowerShell, insira o seguinte comando para clonar este repositório:
+4. No painel do PowerShell, insira os seguintes comandos para clonar esse repositório:
 
     ```
     rm -r dp500 -f
     git clone https://github.com/MicrosoftLearning/DP-500-Azure-Data-Analyst dp500
     ```
 
-5. Depois que o repositório tiver sido clonado, digite os seguintes comandos para alterar a pasta para a neste laboratório e executar o **setup.ps1** contido nela:
+5. Depois que o repositório tiver sido clonado, digite os seguintes comandos para alterar para a pasta deste laboratório e execute o script **setup.ps1** que ele contém:
 
     ```
     cd dp500/Allfiles/03
@@ -46,7 +46,7 @@ Neste exercício, você usará uma combinação de um script do PowerShell e um 
 6. Se solicitado, escolha qual assinatura você deseja usar (isso só acontecerá se você tiver acesso a várias assinaturas do Azure).
 7. Quando solicitado, insira uma senha adequada a ser definida para seu pool de SQL do Azure Synapse.
 
-    > **Observação**: memorize a senha!
+    > **Obsrevação**: lembre-se dessa senha.
 
 8. Aguarde a conclusão do script – isso normalmente leva cerca de 15 minutos, mas em alguns casos pode demorar mais. Enquanto espera, revise o artigo [O que é o pool de SQL dedicado no Azure Synapse Analytics?](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) na documentação do Azure Synapse Analytics.
 
@@ -60,7 +60,7 @@ Neste laboratório, o data warehouse está hospedado em um pool de SQL dedicado 
 2. Na página **Visão geral** do seu workspace Synapse, no cartão **Abrir Synapse Studio**, selecione **Abrir** para abrir o Synapse Studio em uma nova guia do navegador, fazendo login se solicitado.
 3. No lado esquerdo do Synapse Studio, use o ícone **&rsaquo;&rsaquo;** para expandir o menu, o que revela as diferentes páginas do Synapse Studio usadas para gerenciar recursos e executar tarefas de análise de dados.
 4. Na página **Gerenciar**, certifique-se de que a guia **Pools de SQL** esteja selecionada e, em seguida, selecione o pool de SQL dedicado **sql*xxxxxxx*** e use seu ícone **&#9655;** para iniciá-lo; confirmando que deseja retomá-lo quando solicitado.
-5. Aguarde até que o pool de SQL seja retomado. Isso pode levar alguns minutos. Use o botão **Atualizar &#8635;** para verificar seu status periodicamente. O status será exibido como **Online** quando estiver pronto.
+5. Aguarde até que o pool de SQL seja retomado. Isso pode levar alguns minutos. Use o botão **↻ Atualizar** para verificar seu status periodicamente. O status será exibido como **Online** quando estiver pronto.
 
 ### Exibir as tabelas no banco de dados
 

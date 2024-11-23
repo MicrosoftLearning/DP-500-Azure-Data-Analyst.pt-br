@@ -201,7 +201,7 @@ Nesta tarefa, você adicionará uma tabela de agregação ao modelo.
 
     *O Power BI Desktop adiciona uma nova tabela ao modelo.*
 
-15. Salve o arquivo do Power BI Desktop.
+15. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-improve-query-performance-with-aggregations-image23.png)
 
@@ -405,7 +405,7 @@ Nesta tarefa, você testará a agregação e determinará se ela deve ser usada 
 
 Nesta tarefa, você vai concluir.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-improve-query-performance-with-aggregations-image53.png)
 

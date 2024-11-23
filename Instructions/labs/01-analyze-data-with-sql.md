@@ -16,16 +16,16 @@ Este laboratório levará aproximadamente **40** minutos para ser concluído.
 
 ## Provisionar um workspace do Azure Synapse Analytics
 
-Você precisará de um workspace do Azure Synapse Analytics com acesso ao armazenamento de data lake. Você pode usar o pool de SQL interno sem servidor para consultar arquivos no data lake.
+Você precisará de um espaço de trabalho do Azure Synapse Analytics com acesso ao armazenamento de data lake. Você pode usar o pool do SQL interno sem servidor para consultar arquivos no data lake.
 
-Neste exercício, você usará uma combinação de um script do PowerShell e um modelo ARM para provisionar um workspace do Azure Synapse Analytics.
+Neste exercício, você usará uma combinação de um script do PowerShell e um modelo ARM para provisionar um espaço de trabalho do Azure Synapse Analytics.
 
 1. Entre no [portal do Azure](https://portal.azure.com) em `https://portal.azure.com`.
-2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** criando um armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
+2. Use o botão **[\>_]** à direita da barra de pesquisa na parte superior da página para criar um Cloud Shell no portal do Azure, selecionando um ambiente ***PowerShell*** e criando armazenamento caso solicitado. O Cloud Shell fornece uma interface de linha de comando em um painel na parte inferior do portal do Azure, conforme mostrado aqui:
 
     ![Portal do Azure com um painel do Cloud Shell](../images/cloud-shell.png)
 
-    > **Observação**: se você tiver criado anteriormente um shell de nuvem que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do shell de nuvem para alterá-lo para ***PowerShell***.
+    > **Observação**: se você tiver criado anteriormente um cloud shell que usa um ambiente *Bash*, use o menu suspenso no canto superior esquerdo do painel do cloud shell para alterá-lo para ***PowerShell***.
 
 3. Observe que você pode redimensionar o Cloud Shell arrastando a barra do separador na parte superior do painel ou usando os ícones **&#8212;** , **&#9723;** e **X** no canto superior direito do painel para minimizar, maximizar e fechar o painel. Para obter mais informações de como usar o Azure Cloud Shell, confira a [documentação do Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
 
@@ -46,23 +46,23 @@ Neste exercício, você usará uma combinação de um script do PowerShell e um 
 6. Se solicitado, escolha qual assinatura você deseja usar (isso só acontecerá se você tiver acesso a várias assinaturas do Azure).
 7. Quando solicitado, insira uma senha adequada a ser definida para seu pool de SQL do Azure Synapse.
 
-    > **Observação**: memorize a senha!
+    > **Observação**: Memorize a senha.
 
 8. Aguarde a conclusão do script – isso normalmente leva cerca de 10 minutos, mas em alguns casos pode demorar mais. Enquanto espera, revise o artigo [Pool de SQL sem servidor no Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/sql/on-demand-workspace-overview) na documentação do Azure Synapse Analytics.
 
 ## Consultar dados em arquivos
 
-O script provisiona um workspace do Azure Synapse Analytics e uma conta de Armazenamento do Azure para hospedar o data lake e, em seguida, carrega alguns arquivos de dados no data lake.
+O script provisiona um espaço de trabalho do Azure Synapse Analytics e uma conta de Armazenamento do Azure para hospedar o data lake e, em seguida, carrega alguns arquivos de dados no data lake.
 
 ### Exibir arquivos no data lake
 
 1. Depois que o script for concluído, no portal do Azure, vá para o grupo de recursos **dp500-*xxxxxxx*** que ele criou e selecione seu workspace Sinapse.
 2. Na página **Visão geral** do seu workspace Synapse, no cartão **Abrir Synapse Studio**, selecione **Abrir** para abrir o Synapse Studio em uma nova guia do navegador, fazendo login se solicitado.
-3. No lado esquerdo do Synapse Studio, use o ícone **&rsaquo;&rsaquo;** para expandir o menu, o que revela as diferentes páginas do Synapse Studio usadas para gerenciar recursos e executar tarefas de análise de dados.
-4. Na página **Dados**, exiba a guia **Vinculado** e verifique se seu workspace inclui um link para sua conta de armazenamento do Azure Data Lake Storage Gen2, que deve ter um nome semelhante à **sinapse*xxxxxxx* (Principal – datalake*xxxxxxx*)**.
+3. No lado esquerdo do Synapse Studio, use o ícone **&rsaquo;&rsaquo;** para expandir o menu – o que revela as diferentes páginas do Synapse Studio usadas para gerenciar recursos e executar tarefas de análise de dados.
+4. Na página **Dados**, exiba a guia **Vinculado** e verifique se seu workspace inclui um link para sua conta de armazenamento do Azure Data Lake Storage Gen2, que deve ter um nome semelhante à **synapse*xxxxxxx* (Primary - datalake*xxxxxxx*)**.
 5. Expanda sua conta de armazenamento e verifique se ela contém um contêiner do sistema de arquivos chamado **arquivos**.
-6. Selecione o contêiner de **arquivos** e observe que ele contém pastas chamadas **vendas**. Esta pasta contém os arquivos de dados que você vai consultar.
-7. Abra a pasta de **vendas** e a pasta **csv** contida nela e observe que a pasta csv contém arquivos de .csv para três anos de dados de vendas.
+6. Selecione o contêiner de **arquivos** e observe que ele contém uma pasta chamada **vendas**. Esta pasta contém os arquivos de dados que você vai consultar.
+7. Abra a pasta de **vendas** e a pasta **csv** que ela contém e observe que essa pasta contém arquivos .csv para três anos de dados de vendas.
 8. Clique com o botão direito do mouse em qualquer um dos arquivos e selecione **Visualizar** para ver os dados que ele contém. Observe que os arquivos não contêm uma linha de cabeçalho, portanto, você pode desmarcar a opção para exibir cabeçalhos de coluna.
 9. Feche a versão prévia e use o botão **&#8593;** para navegar de volta para a pasta **vendas**.
 10. Na pasta **vendas**, abra a pasta **json** e observe que ela contém alguns exemplos de pedidos de vendas em arquivos .json. Visualize qualquer um desses arquivos para ver o formato JSON usado para uma ordem do cliente.
@@ -72,7 +72,7 @@ O script provisiona um workspace do Azure Synapse Analytics e uma conta de Armaz
 
 ### Usar o SQL para consultar arquivos CSV
 
-1. Selecione a pasta **csv** e, na lista **Novo script SQL** na barra de ferramentas, selecione **Selecionar 100 linhas SUPERIORES**.
+1. Selecione a pasta **csv** e, na lista **Novo script SQL** na barra de ferramentas, selecione **Selecionar as 100 PRIMEIRAS LINHAS**.
 2. Na lista **Tipo de arquivo**, selecione **Formato** de texto e aplique as configurações para abrir um novo script SQL que consulta os dados na pasta.
 3. No painel **Propriedades** do **Script SQL 1** criado, altere o nome para **Consulta CSV de vendas** e altere as configurações de resultado para mostrar **Todas as linhas**. Em seguida, na barra de ferramentas, selecione **Publicar** para salvar o script e use o botão **Propriedades** (que é semelhante a **&#128463;.**) na extremidade direita da barra de ferramentas para ocultar o painel **Propriedades**.
 4. Examine o código de SQL que foi gerado e deve ser semelhante a este:
@@ -274,9 +274,9 @@ Ao definir uma fonte de dados externa em um banco de dados, você pode usá-la p
     GO;
     ```
 
-3. Modifique as propriedades do script para alterar seu nome para **Criar DB de Vendas** e publique-o.
-4. Verifique se o script está conectado ao **Pool SQL de interno** e ao banco de dados **primário** e execute-o.
-5. Volte para a página **Dados** e use o botão **&#8635;** na parte superior do Synapse Studio para atualizar a página. Em seguida, exiba a guia **Workspace** no painel **Dados**, em que uma lista de s**banco de dados SQL** SQL agora é exibida. Expanda essa lista para verificar se o banco de dados **Vendas** foi criado.
+3. Modifique as propriedades do script para alterar seu nome para **Create Sales DB** e publique.
+4. Verifique se o script está conectado ao pool SQL **interno** e ao banco de dados **mestre** e execute-o.
+5. Volte para a página **Dados** e use o botão **↻** no canto superior direito do Synapse Studio para atualizar a página. Em seguida, exiba a guia **Espaço de trabalho** no painel **Dados**, onde uma lista **banco de dados SQL** agora é exibida. Expanda essa lista para verificar se o banco de dados **Vendas** foi criado.
 6. Expanda o banco de dados **Vendas**, sua pasta **Recursos Externos** e a pasta **Fontes de dados externas** para ver a fonte de dados externa **sales_data** que você criou.
 7. No menu **...** para o banco de dados **Vendas**, selecione **Novo script SQL** > **Script vazio**. Em seguida, no novo painel de script, insira e execute a seguinte consulta:
 

@@ -14,7 +14,7 @@ Neste laboratório, você melhorará o desempenho de um modelo composto definind
 
 Neste laboratório, você aprenderá a:
 
-- Configurar modo de armazenamento duplo.
+- Definir modo de armazenamento duplo.
 
 - Usar o Performance Analyzer para revisar as atividades de atualização.
 
@@ -213,7 +213,7 @@ Nesta tarefa, você examinará o relatório pré-desenvolvido.
 
 Nesta tarefa, você vai concluir.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-improve-query-performance-with-dual-storage-mode-image22.png)
 

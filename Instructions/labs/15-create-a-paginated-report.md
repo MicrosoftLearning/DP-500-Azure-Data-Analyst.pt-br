@@ -334,7 +334,7 @@ Nesta tarefa, você finalizará o design da região do cabeçalho do relatório 
     |  **Propriedade**| **Valor** |
     | --- | --- |
     |  Posição > Localização > Esquerda| 0 |
-    |  Posição > Localização > Superior| 0,5 |
+    |  Posição > Localização > Superior| 0.5 |
     |  Posição > Tamanho > Largura| 4 |
     |  Posição > Tamanho > Altura| 0,25 |
 

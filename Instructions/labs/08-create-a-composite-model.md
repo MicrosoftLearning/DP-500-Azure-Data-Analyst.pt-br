@@ -325,7 +325,7 @@ Nesta tarefa, você atualizará o relatório para usar as novas medidas.
 
 Nesta tarefa, você vai concluir.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-create-a-composite-model-image36.png)
 

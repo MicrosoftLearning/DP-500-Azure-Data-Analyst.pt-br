@@ -14,8 +14,8 @@ Neste laboratório, você usará o Power BI Desktop e o Editor de Tabelas 2 para
 Neste laboratório, você aprenderá a:
 
 -   Criar grupos de cálculo.
--   Formatar itens de cálculo.
--   Definir a precedência de grupo de cálculo.
+-   Formate os itens de cálculo.
+-   Precedência do grupo de cálculo.
 -   Configurar elementos visuais para usar grupos de cálculo.
 
 ## Introdução
@@ -461,7 +461,7 @@ Descrição gerada automaticamente](../images/image43.png)
 
 Nesta tarefa, você vai concluir.
 
-1.  Salve o arquivo do Power BI Desktop.
+1.  Salve o arquivo do Power BI Desktop.
 
     ![](../images/image47.png)
 

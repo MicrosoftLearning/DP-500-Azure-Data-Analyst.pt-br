@@ -10,11 +10,11 @@ lab:
 
 **O tempo estimado para concluir o laboratório é de 30 minutos**
 
-Neste laboratório, você configurará um relatório para usar a atualização automática de página. Dessa forma, será possível que os consumidores do relatório acompanhem os resultados de vendas pela internet em tempo real.
+Neste laboratório, você configurará um relatório para usar a atualização automática de página. Assim, os usuários do relatório poderão monitorar os resultados das vendas pela internet em tempo real.
 
 Neste laboratório, você aprenderá a:
 
-- Usar o Performance Analyzer para revisar as atividades de atualização.
+- Use o Performance Analyzer para revisar as atividades de atualização.
 
 - Configurar a atualização automática de página.
 
@@ -234,7 +234,7 @@ Nesta tarefa, você configurará a detecção de alterações.
 
 Nesta tarefa, você vai concluir.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-monitor-data-in-real-time-image26.png)
 

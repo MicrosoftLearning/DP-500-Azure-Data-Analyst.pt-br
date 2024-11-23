@@ -389,7 +389,7 @@ Nesta tarefa, você adicionará filtros à consulta **Vendas**.
 
     *Essas são as linhas filtradas para junho de 2022.*
 
-10. Salve o arquivo do Power BI Desktop.
+10. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-improve-performance-with-hybrid-tables-image40.png)
 
@@ -427,7 +427,7 @@ Nesta tarefa, você configurará a política de atualização incremental para a
 
     ![](../images/dp500-improve-performance-with-hybrid-tables-image46.png)
 
-7. Salve o arquivo do Power BI Desktop.
+7. Salve o arquivo do Power BI Desktop.
 
     ![](../images/dp500-improve-performance-with-hybrid-tables-image47.png)
 
@@ -607,15 +607,19 @@ Nesta tarefa, você adicionará um pedido ao banco de dados.
 
     ![](../images/dp500-improve-performance-with-hybrid-tables-image71.png)
 
-9. Revise o script.
+9. Altere o contexto do banco de dados de `master` para `AdventureWorksDW2022-DP500` usando o menu suspenso na barra de ferramentas do SQL Server Management Studio
+
+    ![](../images/dp500-improve-performance-with-hybrid-tables-image72a.png)
+   
+10. Revise o script.
 
     *Esse script insere um único pedido na tabela **FactInternetSales** usando hoje como a data do pedido.*
 
-10. Para executar um script, na barra de ferramentas, selecione **Executar** (ou pressione **F5**).
+11. Para executar um script, na barra de ferramentas, selecione **Executar** (ou pressione **F5**).
 
     ![](../images/dp500-improve-performance-with-hybrid-tables-image72.png)
 
-11. Para fechar o arquivo, no menu **Arquivo**, clique em **Fechar**.
+12. Para fechar o arquivo, no menu **Arquivo**, clique em **Fechar**.
 
 ### Atualize o relatório
 
